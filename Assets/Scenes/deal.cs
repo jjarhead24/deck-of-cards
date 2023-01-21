@@ -20,21 +20,14 @@ public struct Card
 
 public class deal : MonoBehaviour
 {
-
     // List of the cards to act as a deck
     public static List<Card> DeckOfCards = new List<Card>();
-
-
-    
-
     // Start is called before the first frame update
     void Start()
     {
         //generate a deck, shuffle deck
 
         GenDeck();
-
-        OutputDeck();
     }
 
     // Update is called once per frame
@@ -106,15 +99,7 @@ public class deal : MonoBehaviour
                 DeckOfCards.Add(NewCard);
             }
         }
-        // TODO fix getting 260 cards?
-         Debug.Log(DeckOfCards.Count);  
-         return;
+        Debug.Log(DeckOfCards.Count);  
+        return;
     }
- 
-    private void OutputDeck()
-    {
-        //output the card info to the text on the scene
-
-    }
-
 }
